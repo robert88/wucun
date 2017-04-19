@@ -1,0 +1,12 @@
+
+@media (max-width: 768px){
+	nav .logo{background: url(/public/images/Z/logo-white.png) no-repeat;display: inline-block;width: 96px;height: 117px}
+}
+@media (min-width: 768px){
+	nav .login-wrap .icon-user{background: url(/public/images/Z/Shape.png) no-repeat;}
+	nav .login-wrap .icon-lang-en{background: url(/public/images/Z/lang.png) no-repeat;}
+	footer .logo{background: url(/public/images/Z/logo-color.png)  no-repeat;display: inline-block;width: 90px;height: 109px;}
+}
+[class^="icon-"], [class*=" icon-"] {
+	display: inline-block;width: 33px;height:33px;
+}

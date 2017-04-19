@@ -1,4 +1,4 @@
-/*ÖØ¹¹css*/
+/*ï¿½Ø¹ï¿½css*/
 html, body, h1, h2, h3, h4, h5, h6, div, ul, li, dl, dt, dd, ol, pre, form, fieldset, input, textarea, p, blockquote, th, td, hr, img, select {
 	padding: 0;
 	margin: 0;
@@ -6,14 +6,14 @@ html, body, h1, h2, h3, h4, h5, h6, div, ul, li, dl, dt, dd, ol, pre, form, fiel
 }
 
 html, body {
-	font-family: 'Microsoft Yahei', "¼šÃ÷ów", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+	font-family: 'Microsoft Yahei',  tahoma, arial, 'STSongti-TC-Regular','å®‹ä½“', '\5b8b\4f53', sans-serif;
 	color: #333;
 	text-shadow: #fff 0 1px 0;
 }
 body{
 	font-size: 14px;
 	/*background: url(/public/img/bg.jpg) repeat-x #5C5C5C;*/
-	background: #eee;
+	/*background: #eee;*/
 	line-height: 25px;
 	position: relative;
 }
@@ -57,7 +57,7 @@ img {
 	border: 0px;
 }
 
-/*¸¡¶¯²¼¾Ö ¿í¶È*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½*/
 .col:after {
 	content: " ";
 	display: block;
@@ -153,3 +153,5 @@ img {
 .tc{
 	text-align:center;
 }
+.btn_green{color:#FFF;}
+.btn_green a{padding: 7px 25px;background: #637332;border-radius:25px;border: 1px solid #fff;}
