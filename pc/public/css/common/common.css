@@ -6,8 +6,8 @@ html, body, h1, h2, h3, h4, h5, h6, div, ul, li, dl, dt, dd, ol, pre, form, fiel
 
 html, body {
 	font-family: 'Microsoft Yahei',  tahoma, arial, 'STSongti-TC-Regular','宋体', '\5b8b\4f53', sans-serif;
-	color: #333;
-	text-shadow: #fff 0 1px 0;
+	color: #345B5E;
+	/*text-shadow: #fff 0 1px 0;*/
 }
 body{
 	font-size: 14px;
@@ -151,6 +151,10 @@ img {
 }
 .tc{
 	text-align:center;
+}
+.wrap{
+	min-width:320px;
+	max-width:1410px;
 }
 .btn_green{color:#FFF;}
 .btn_green a{padding: 7px 25px;background: #637332;border-radius:25px;border: 1px solid #fff;}
