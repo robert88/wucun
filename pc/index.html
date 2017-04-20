@@ -28,16 +28,30 @@
     <!--s:导航-->
     <style>
         header{background: url("/public/images/Z/bg1.jpg") no-repeat center center;height: 950px;}
-        nav{padding: 0 96px;}
-        nav .logo{background: url("/public/images/Z/logo-white.png") no-repeat;position:absolute;left:0px;top:30px;width: 96px;height: 117px;}
-        nav .navMenu{position:absolute;right:0;top:60px;font-size: 16px;color: #FFFFFF;max-width: 644px;margin-left:65px;}
-        nav .login-wrap{width: 96px;height: 117px;padding:60px;}
-        nav .login-wrap .icon-user{background: url(/public/images/Z/Shape.png) no-repeat;}
-        nav .login-wrap .icon-lang-en{background: url(/public/images/Z/lang.png) no-repeat;}
+        nav{padding: 0 388px 0 164px;position:relative;color: #fff;font-size: 16px;}
+        /*手机尺寸*/
+        @media screen and (min-width:960px)  {
+            @media screen and (max-width:1250px)  {
+                nav{padding: 0 388px 0 124px;}
+            }
+        }
+        /*手机尺寸*/
+        @media screen and (max-width:960px)  {
+            nav{padding: 0 388px 0 124px;}
+        }
+        nav .logo{background: url("/public/images/Z/logo-white.png") no-repeat;position:absolute;left:10px;top:30px;width: 96px;height: 117px;}
+        nav .navMenu{max-width: 644px;padding-top:60px;}
+        nav .navMenu li,nav .login-wrap li{height: 33px;line-height: 33px;}
+        nav .login-wrap{position:absolute;right:0;top:60px;width: 388px;height: 117px;}
+        nav .login-wrap li{display: inline-block;vertical-align: middle;}
+        nav .login-wrap .tel{margin-right:40px;}
+        nav .login-wrap .user{margin-right:10px;}
 
+        footer .logo{background: url(/public/images/Z/logo-color.png)  no-repeat;display: inline-block;width: 90px;height: 109px;}
     </style>
+
+    <header>
     <div class="wrap">
-        <header>
         <nav>
             <div class="logo"></div>
             <div class="navMenu">
@@ -50,15 +64,15 @@
                 </ul>
             </div>
             <div class="login-wrap fr tr">
-                <ul class="tl">
+                <ul class="tl col">
                     <li class="tel">您的旅游咨询电话   0573-88731088</li>
                     <li class="user"><i class="icon-user"></i></li>
                     <li class="lang"><i class="icon-lang-en"></i></li>
                 </ul>
             </div>
         </nav>
-        </header>
     </div>
+    </header>
     <!--e:导航-->
 
     <!--s:主题部分-->

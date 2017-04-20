@@ -12,7 +12,7 @@ html, body {
 body{
 	font-size: 14px;
 	/*background: url(/public/img/bg.jpg) repeat-x #5C5C5C;*/
-	/*background: #eee;*/
+	background: #F9F8F5;;
 	line-height: 25px;
 	position: relative;
 }
@@ -152,10 +152,26 @@ img {
 .tc{
 	text-align:center;
 }
+.mt15{
+	margin-top:15px;
+}
+.mt30{
+	margin-top:30px;
+}
+.mt60{
+	margin-top:60px;
+}
+.margin10{margin: 10px;}
 .wrap{
 	min-width:320px;
 	max-width:1410px;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.t-son{
+	font-family: '\5b8b\4f53','宋体', 'STSongti-TC-Regular',"Times New Roman",TimesNewRomanPSMT,arial,'Microsoft Yahei', sans-serif;
 }
 .btn_green{color:#FFF;}
 .btn_green a{padding: 7px 25px;background: #637332;border-radius:25px;border: 1px solid #B7B6B1;}
-.margin10{margin: 10px;}
+

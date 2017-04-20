@@ -1,5 +1,7 @@
 
-footer .logo{background: url(/public/images/Z/logo-color.png)  no-repeat;display: inline-block;width: 90px;height: 109px;}
 [class^="icon-"], [class*=" icon-"] {
-	display: inline-block;width: 33px;height:33px;
+	display: inline-block;width: 33px;height:33px;vertical-align: middle;
 }
+.icon-user{background: url(/public/images/Z/Shape.png) no-repeat;}
+.icon-lang-en{background: url(/public/images/Z/lang.png) no-repeat;}
+.icon-turn-right{background: url(/public/images/Z/Oval.png) no-repeat;}

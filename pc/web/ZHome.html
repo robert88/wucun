@@ -1,0 +1,140 @@
+<style>
+	.home-head{
+		margin-top:-240px;
+		font-size: 20px;
+		color: #FFFFFF;
+	}
+	.home-head .wrap{
+		position:relative;
+	}
+	.home-head .ad-text{
+		position:absolute;
+		text-align: center;
+		top:-230px;
+		font-size: 64px;
+		line-height: 64px;
+		width: 100%;
+	}
+	.home-head .ad-weather{
+		text-align: right;
+	}
+	.home-head .travel{
+		margin-top:30px;
+		padding-left:35px;
+		color: #EEEBDA;
+		position:relative;
+		height:70px;
+		line-height: 67px;
+		padding-right:220px;
+		background: #1B4549;
+	}
+	.home-head .travel-btn{
+		background: #B24840;
+		border-radius: 3px;
+		position:absolute;
+		right:0px;
+		top:0px;
+		width:220px;
+		height:100%;
+	}
+	.home-head .ipt-date{
+		margin-left:50px;
+		font-size: 30px;
+		color: #EEEBDA;
+		letter-spacing: 7.5px;
+		display: inline-block;
+	}
+	.home-head .ipt-date input{
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid #345B5E;
+	}
+	.home-head .ad-group .img img{
+		width:100%;
+		height:220px;
+	}
+	.home-head .ad-group .text{
+		margin-left:15px;
+		height: 60px;
+		line-height: 60px;
+	}
+	.home-head .ad-group .ad-item{
+		margin-left:15px;
+		margin-right:15px;
+		background: #fff;
+		color: #2B2B2B;
+	}
+	.home-head .ad-group li:first-child .ad-item{
+		margin-left:0px;
+		margin-right:15px;
+	}
+	.home-head .ad-group li:last-child .ad-item{
+		margin-left:15px;
+		margin-right:0px;
+	}
+	.home-head h3{
+		font-size: 64px;
+		color: #FFFFFF;
+		margin-top:84px;
+	}
+	.home-head .nongqu .text{
+		max-width:450px;
+		margin-top:14px;
+		line-height: 36px;
+	}
+</style>
+<div class="home-head" id="homeVue">
+	<div class="wrap">
+		<div class="ad-text t-son">乡 野 农 趣·乐 在 乌 村</div>
+		<div class="ad-weather">{{weather}}天，{{temperature}}</div>
+
+		<div class="travel">
+			<div class="date">
+				<label >开启您的梦想假期</label>
+				<div class="ipt-date t-son">
+					<span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span><input type="text" readonly style="width: 200px" name="reservation" id="reservation" class="form-control" value="2014-5-21 - 2014-6-21" />
+				</div>
+
+			</div>
+			<div class="travel-btn tc">
+				<a href="">开启行程</a>
+				<i class="icon-turn-right"></i>
+			</div>
+		</div>
+
+		<ul class="col mt15 ad-group">
+			<li class="col4">
+				<div class="ad-item">
+					<p class="img"><img src="/public/images/Z/Bitmap1.png" alt=""></p>
+					<p class="text">小镇圣诞节，乌村精彩多！</p>
+				</div>
+
+			</li>
+			<li class="col4">
+				<div class="ad-item">
+					<p class="img"><img src="/public/images/Z/Bitmap1.png" alt=""></p>
+					<p class="text">乌村CCO带你玩转乌村</p>
+				</div>
+			</li>
+			<li class="col4">
+				<div class="ad-item">
+					<p class="img"><img src="/public/images/Z/Bitmap1.png" alt=""></p>
+					<p class="text">逃离都市——生活的另一种可能</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="wrap mt60 nongqu">
+		<h3>农趣</h3>
+		<p class="text">在CCO的陪伴指导下，
+			游客可亲自下地采摘蔬菜，自己完成美食烹饪，
+			可以钓鱼、钓龙虾，享受垂钓乐趣。
+		</p>
+		<p class="mt30">
+			<div class="btn btn-private"><a href="">查看更多乌村美食</a></div>
+			<div class="btn btn-yellow"><a href="">预订一价全包</a></div>
+		</p>
+	</div>
+
+</div>
