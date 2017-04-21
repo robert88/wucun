@@ -1,1 +1,15 @@
-<div class='ls-container'></div>
+<!-- 瀑布流样式开始 -->
+<div class="wrap">
+	<div class="waterfull col" id="waterfull">
+		<ul>
+			<li v-for="item in imageGroup" class="item">
+				<a :href="item.src" class="a-img">
+					<img :src="item.img" alt="">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- loading按钮自己通过样式调整 -->
+	<div  id="imloading">...</div>
+	<div  class="tc"><a class="load-more btn btn-private" >欣赏更多 <i class="icon-i0"></i></a></div>
+</div>
