@@ -6,6 +6,9 @@
     window.module = {};
     var head = document.getElementsByTagName("head")[0];
     window.require = function(url,id){
+        if($!=jQuery){
+            $=jQuery;
+        }
         $.ajax({
             url:url,
             dataType:"text",

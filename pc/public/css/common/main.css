@@ -5,3 +5,33 @@
 .icon-user{background: url(/public/images/Z/Shape.png) no-repeat;}
 .icon-lang-en{background: url(/public/images/Z/lang.png) no-repeat;}
 .icon-turn-right{background: url(/public/images/Z/Oval.png) no-repeat;}
+.icon-Chicken-legs{background: url(/public/images/Z/Oval.png) no-repeat; width: 48px;height:48px; }
+.icon-house{background: url(/public/images/Z/Oval.png) no-repeat;  }
+.icon-game{background: url(/public/images/Z/Oval.png) no-repeat;  }
+
+
+header{background: url("/public/images/Z/bg1.jpg") no-repeat center center;height: 950px;}
+nav{padding: 0 388px 0 164px;position:relative;color: #fff;font-size: 16px;}
+nav .logo{background: url("/public/images/Z/logo-white.png") no-repeat;position:absolute;left:10px;top:30px;width: 96px;height: 117px;}
+nav .navMenu{max-width: 644px;padding-top:60px;}
+nav .navMenu li,nav .login-wrap li{height: 33px;line-height: 33px;}
+nav .login-wrap{position:absolute;right:0;top:60px;width: 388px;height: 117px;}
+nav .login-wrap li{display: inline-block;vertical-align: middle;}
+nav .login-wrap .tel{margin-right:40px;}
+nav .login-wrap .user{margin-right:10px;}
+/*手机尺寸*/
+@media screen and (min-width:960px) and (max-width:1250px){
+	nav{padding: 0 388px 0 124px;}
+}
+/*手机尺寸*/
+@media screen and (max-width:960px)  {
+	nav{padding: 0 388px 0 124px;}
+}
+
+footer{height: 250px;background: #063033;font-size: 14px; color: #809899; line-height: 32px;}
+footer .footer-contain {padding:30px 147px 30px 120px;position:relative;}
+footer .footer-contain .logo{position:absolute;background: url(/public/images/Z/logo-color.png)  no-repeat;display: inline-block;width: 90px;height: 109px;left:0;top:30px;}
+footer .footer-contain .weiCode{position:absolute;right:0;top:30px;}
+footer hr{  width: 100%;height: 1px;border: none;background: #2B3F40;}
+footer .right{text-align: center; line-height: 60px;}
+footer .right a{margin:0 10px;}

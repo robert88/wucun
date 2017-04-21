@@ -72,17 +72,96 @@
 		margin-left:15px;
 		margin-right:0px;
 	}
-	.home-head h3{
+	.home-head .ad-block{
+		height:500px;
+
+	}
+	.home-head .nongqu{
+		background:url("/public/images/Z/Rectangle4.jpg") no-repeat center center;
+	}
+	.home-head .tongqu{
+		background:url("/public/images/Z/Rectangle5.png") no-repeat center center;
+	}
+	.home-head .shiqu{
+		background:url("/public/images/Z/Rectangle6.png") no-repeat center center;
+	}
+	.home-head .ad-block h3{
 		font-size: 64px;
 		color: #FFFFFF;
-		margin-top:84px;
+		padding-top:84px;
+		line-height: 64px;
 	}
-	.home-head .nongqu .text{
+	.home-head .title-block h3,.home-head .slide-block h3,.voice-block h3{
+		font-size: 64px;
+		color: #345B5E;
+		line-height: 64px;
+		padding:100px 0 50px 0;
+	}
+
+	.home-head .ad-block .text{
 		max-width:450px;
-		margin-top:14px;
+		margin-top:24px;
 		line-height: 36px;
+
+	}
+	.home-head .title-block img{
+		width:100%;
+		height:100%;
+	}
+	.home-head .title-block .box{
+		height:395px;
+	}
+	.home-head .title-block .half-box{
+		height:198px
+	}
+	.home-head .title-block .col6{
+		position: relative;
+	}
+	.home-head .title-block .text{
+		line-height: 40px;
+		background: #345B5E;
+		color:#fff;
+		font-size: 16px;
+		position:absolute;
+		bottom:0;
+		left:0;
+		padding:0 10px;
+	}
+	.slide-block img{
+		width: 100%;
+		height:100%;
+	}
+	.ditu-block .title{
+		background: #1B4549;
+		box-shadow: 0 0 8px 2px rgba(0,0,0,0.15);
+		height:100px;
+		line-height: 100px;
+		font-size: 18px;
+		color: #E2E2E2;
+	}
+	.voice-block{
+		background: url(/public/images/Z/texturebg.png) no-repeat center center;
+		height:700px;
+	}
+	.voice-block .text{
+		font-size: 16px;
+		color: #345B5E;
+		line-height: 28px;
+	}
+	.voice-block .come{
+		font-size: 16px;
+		color: #637332;
+
+	}
+	.voice-block .come span{
+		display: inline-block;
+		vertical-align: middle;
 	}
 </style>
+
+<link rel="stylesheet" type="text/css" href="http://api.map.baidu.com/res/11/bmap.css">
+<script type="text/javascript" src="http://api.map.baidu.com/getscript?v=1.1&amp;ak=&amp;services=true&amp;t=20130716024058"></script>
+
 <div class="home-head" id="homeVue">
 	<div class="wrap">
 		<div class="ad-text t-son">乡 野 农 趣·乐 在 乌 村</div>
@@ -92,7 +171,12 @@
 			<div class="date">
 				<label >开启您的梦想假期</label>
 				<div class="ipt-date t-son">
-					<span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span><input type="text" readonly style="width: 200px" name="reservation" id="reservation" class="form-control" value="2014-5-21 - 2014-6-21" />
+					<div class="ta_date" id="div_date_demo3">
+						<span class="date_title" id="date_demo3">2017-03-17</span>
+						<a class="opt_sel" id="input_trigger_demo3" href="#">
+							<i class="i_orderd"></i>
+						</a>
+					</div>
 				</div>
 
 			</div>
@@ -124,17 +208,152 @@
 			</li>
 		</ul>
 	</div>
-
-	<div class="wrap mt60 nongqu">
-		<h3>农趣</h3>
-		<p class="text">在CCO的陪伴指导下，
-			游客可亲自下地采摘蔬菜，自己完成美食烹饪，
-			可以钓鱼、钓龙虾，享受垂钓乐趣。
-		</p>
-		<p class="mt30">
+	
+	<div class="ad-block mt60 nongqu">
+		<div class="wrap  ">
+			<h3 class="t-son">农趣</h3>
+			<p class="text">在CCO的陪伴指导下，
+				游客可亲自下地采摘蔬菜，自己完成美食烹饪，
+				可以钓鱼、钓龙虾，享受垂钓乐趣。
+			</p>
+			<div class="mt30">
+				<div class="btn btn-private"><a href="">了解一价全包模式</a></div>
+				<div class="btn btn-green"><a href="">了解CCO服务</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="ad-block tongqu">
+		<div class="wrap col">
+			<div class="fr">
+				<h3 class="t-son">食趣</h3>
+				<p class="text">购买一价全包产品，
+					在乌村尽享当地美食，甜品、小食吃个够！
+					更有总厨私房菜可供选择预约。
+				</p>
+				<div class="mt30">
+					<div class="btn btn-private"><a href="">查看更多体验活动</a></div>
+					<div class="btn btn-green"><a href="">了解乌村住宿</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ad-block shiqu">
+		<div class="wrap  ">
+			<h3 class="t-son">农趣</h3>
+			<p class="text">在CCO的陪伴指导下，
+				游客可亲自下地采摘蔬菜，自己完成美食烹饪，
+				可以钓鱼、钓龙虾，享受垂钓乐趣。
+			</p>
+			<div class="mt30">
 			<div class="btn btn-private"><a href="">查看更多乌村美食</a></div>
-			<div class="btn btn-yellow"><a href="">预订一价全包</a></div>
-		</p>
+			<div class="btn btn-green"><a href="">预订一价全包</a></div>
+			</div>
+		</div>
 	</div>
 
+	<div class="title-block">
+		<div class="wrap">
+			<h3 class="t-son">攻略&体验专辑</h3>
+			<ul class="col box" style="overflow: hidden">
+				<li class="col6">
+					<p class="img box">
+						<img src="/public/images/Z/r1.jpg" alt="">
+					</p>
+					<p class="text">
+						我的餐食我做主——“一小时”新鲜蔬菜即刻采摘
+					</p>
+				</li>
+				<li class="col6">
+					<ul class="col half-box">
+						<li class="col6">
+							<p class="img half-box">
+								<img src="/public/images/Z/r2.jpg" alt="">
+							</p>
+							<p class="text">
+								米仓制作甜品
+							</p>
+						</li>
+						<li class="col6">
+							<p class="img half-box">
+								<img src="/public/images/Z/r3.jpg" alt="">
+							</p>
+							<p class="text">
+								乌村——乌镇的后花园
+							</p>
+						</li>
+						<li class="col6">
+							<p class="img half-box">
+								<img src="/public/images/Z/r4.jpg" alt="">
+							</p>
+							<p class="text">
+								与动物友好会面
+							</p>
+						</li>
+						<li class="col6">
+							<p class="img half-box">
+								<img src="/public/images/Z/r5.jpg" alt="">
+							</p>
+							<p class="text">
+								乌村有多好玩？一般人我可不说哦
+							</p>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="slide-block ">
+		<div class="wrap">
+			<h3 class="t-son">关注乌村，正在进行</h3>
+			<div class=" swiper-container swiper-follow" >
+				<div class="swiper-pagination"></div>
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide">
+						<img src="/public/images/Z/s1.jpg" alt="">
+					</li>
+					<li class="swiper-slide">
+						<img src="/public/images/Z/s2.jpg" alt="">
+					</li>
+					<li class="swiper-slide">
+						<img src="/public/images/Z/s3.png" alt="">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="ditu-block mt30">
+		<ul class="title tc col">
+			<li class="col4"><i class="icon-Chicken-legs"></i>美食</li>
+			<li class="col4"><i class="icon-house"></i>住宿</li>
+			<li class="col4"><i class="icon-game"></i>游玩项目</li>
+		</ul>
+		<div id="dituContent" style="height:32rem;"></div>
+	</div>
+
+	<div class="voice-block">
+		<div class="wrap">
+		<h3 class="t-son">农趣</h3>
+		<div class=" swiper-container swiper-voice" >
+			<a class="arrow-right" href="#"></a>
+			<a class="arrow-left" href="#"></a>
+			<div class="swiper-pagination"></div>
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide ">
+					<div class="col">
+						<div class="col5">
+							<img src="/public/images/Z/meihua.jpg" alt="">
+						</div>
+						<div class="col7">
+							<p class="text t-son pt10">是一价全包式的乡村体验，活动很充实，赠送的小吃很地道，丝毫不马虎，最难得的是所有工作人员素质很高，服务很好，向你走来无论是年轻人还是大婶都会对你发自内心的笑，和西栅形成鲜明对比。据说明年会启动娱乐项目，希望保持水准，以后还会去.</p>
+							<p class="come mt30"> <span class="img"><img src="/public/images/Z/user.png" alt=""></span> <span class="ml15">fgkk3a，8小时前</span></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</div>
 </div>

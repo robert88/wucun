@@ -15,41 +15,17 @@
     <!--end mergeCss-->
 
     <!--start mergeJs:lib.min-->
-    <script src="/public/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="/public/js/lib/jquery-1.12.4.js"></script>
+
     <script src="/public/js/common/prototype.js"></script>
 	<script src="/public/js/vue/vue.min.js"></script>
     <!--end mergeJs-->
-
 
 </head>
 
 <body>
 
     <!--s:导航-->
-    <style>
-        header{background: url("/public/images/Z/bg1.jpg") no-repeat center center;height: 950px;}
-        nav{padding: 0 388px 0 164px;position:relative;color: #fff;font-size: 16px;}
-        /*手机尺寸*/
-        @media screen and (min-width:960px)  {
-            @media screen and (max-width:1250px)  {
-                nav{padding: 0 388px 0 124px;}
-            }
-        }
-        /*手机尺寸*/
-        @media screen and (max-width:960px)  {
-            nav{padding: 0 388px 0 124px;}
-        }
-        nav .logo{background: url("/public/images/Z/logo-white.png") no-repeat;position:absolute;left:10px;top:30px;width: 96px;height: 117px;}
-        nav .navMenu{max-width: 644px;padding-top:60px;}
-        nav .navMenu li,nav .login-wrap li{height: 33px;line-height: 33px;}
-        nav .login-wrap{position:absolute;right:0;top:60px;width: 388px;height: 117px;}
-        nav .login-wrap li{display: inline-block;vertical-align: middle;}
-        nav .login-wrap .tel{margin-right:40px;}
-        nav .login-wrap .user{margin-right:10px;}
-
-        footer .logo{background: url(/public/images/Z/logo-color.png)  no-repeat;display: inline-block;width: 90px;height: 109px;}
-    </style>
-
     <header>
     <div class="wrap">
         <nav>
@@ -83,32 +59,44 @@
 
     <!--s:导航-->
     <footer>
-        <div class="logo"></div>
-        <ul class="info col">
-            <li class="col3">
-                <p><a href="">官方权威预订平台</a></p>
-                <p><a href="">一价全包畅享超值服务</a></p>
-                <p><a href="">CCO服务保障高品质度假</a></p>
-                <p><a href="">7x24小时服务</a></p>
-            </li>
-            <li class="col3">
-                <p><a href="">联系我们</a></p>
-                <p><a href="">电话： 0573-88731088</a></p>
-                <p><a href="">地址：浙江省桐乡市乌镇石佛南路18号</a></p>
-            </li>
-            <li class="col3">
-                <p><a href="">乌镇官网</a></p>
-                <p><a href="">乌镇预订网</a></p>
-                <p><a href="">乌镇戏剧节</a></p>
-                <p><a href="">古北水镇官网</a></p>
-            </li>
-            <li class="col3">
-                <p><a href="">服务指南</a></p>
-                <p><a href="">交通路线</a></p>
-                <p><a href="">常见问题</a></p>
-            </li>
-        </ul>
-        <div class="weiCode"></div>
+        <div class="wrap">
+            <div class="footer-contain">
+            <div class="logo"></div>
+            <ul class="info col">
+                <li class="col3">
+                    <p><a href="">官方权威预订平台</a></p>
+                    <p><a href="">一价全包畅享超值服务</a></p>
+                    <p><a href="">CCO服务保障高品质度假</a></p>
+                    <p><a href="">7x24小时服务</a></p>
+                </li>
+                <li class="col3">
+                    <p><a href="">联系我们</a></p>
+                    <p><a href="">电话： 0573-88731088</a></p>
+                    <p><a href="">地址：浙江省桐乡市乌镇石佛南路18号</a></p>
+                </li>
+                <li class="col3">
+                    <p><a href="">乌镇官网</a></p>
+                    <p><a href="">乌镇预订网</a></p>
+                    <p><a href="">乌镇戏剧节</a></p>
+                    <p><a href="">古北水镇官网</a></p>
+                </li>
+                <li class="col3">
+                    <p><a href="">服务指南</a></p>
+                    <p><a href="">交通路线</a></p>
+                    <p><a href="">常见问题</a></p>
+                </li>
+            </ul>
+            <div class="weiCode"><img src="/public/images/Z/erweima.jpg" width="135" height="135" alt=""></div>
+            </div>
+
+
+        </div>
+
+        <hr>
+
+        <div class="right wrap">
+            <a href="">版权声明 </a>|<a href="">隐私政策</a>|<a href="">乌镇旅游股份有限公司©版本所有©浙ICP备09047744号</a>
+        </div>
     </footer>
     <!--e:导航-->
 
@@ -135,5 +123,7 @@
         window.PAGE.data = {};
     })()
 </script>
+
 <script src="/public/js/common/page.js"></script>
+
 </html>
