@@ -1,60 +1,48 @@
-
-.section01{padding-top:100px;color: #E2E2E2;;background: url(../public/images/B/section01bg.jpg) no-repeat 50% 50%;width: 100%;height: 300px;}
+.section01{padding-top:60px;color: #E2E2E2;;background: url(../public/images/B/sxty-banner01.jpg) no-repeat 50% 50%;width: 100%;height: 330px;}
 .section01 h1{font-weight: 100;font-family: STSongti-SC-Regular;font-size: 30px;}
 .section01 .btn{font-size: 14px;}
 .section01 .menoy{font-family: TimesNewRomanPS-ItalicMT;font-size: 20px;margin: 0 3px;}
 .mobilejiage{display: none;}
-.section01 p{padding:20px 15px 30px 15px;width: 850px; margin: auto;}
-.m-section02{display: none;}
-.section02{position: relative;}
-.section02 .nav{margin-top: 5px;}
-.section02 .nav ul{padding: 20px 0;width: 827px;margin: auto;}
-.section02 .nav ul li{float: left;margin: 0 25px;padding:0 20px;cursor: pointer;}
-.section02 .nav ul li.active{color:#345B5E;position: relative;}
-.section02 .nav ul li.active:before{content: "";background: #1B4549; height: 4px;width: 100%;display: inline-block;position: absolute;top: -10px; left: 0;}
-.section02 .nav ul:after{clear: both;display: block;content: "";}
-.section02 .banner li img{width: 100%;}
-.section02 .txt{width: 980px;margin: auto;position: absolute;bottom: -170px;left:0;right:0;box-shadow: 0 0 4px 1px rgba(0,0,0,0.15);}
-.section02 .txt_header{background: rgba(27,69,73,.5);height:35px;line-height: 35px;color: #FFF;padding-left: 10px;}
-.section02 .control{float: left;font-family: TimesNewRomanPSMT;}
-.section02 .selectpage{font-size: 16px;}
-.section02 .control i{margin: 0 15px;font-style: normal;}
-.section02 .txt_header .title{padding-left: 15px;}
-.section02 .content{padding:25px 30px 30px 25px;background: #FFF;}
-.section02 .content .leftimg{float: left;    height: 201px}
-.section02 .content .leftimg img{width: 100px;padding:0 50px 0 30px;}
-.section02 .content .righttxt p{line-height: 28px;font-size: 14px;color: #4A4A4A;}
-.section02 .content .border{border-bottom: 1px dashed #B7B6B1; margin:20px 0 20px 180px;}
-.section03{background: url(../public/images/B/section03bg.png) no-repeat 50% 50%;width: 100%;height: 300px;padding-top: 230px;}
+.section01 p{padding:10px 15px 20px 15px;width: 850px; margin: auto;}
+.section01 .down_icon i{background: url(../public/images/B/down-outline.png) no-repeat 50% 50%;width:30px;height:30px;display: inline-block;margin-top: 20px;}
+.section02 h3{font-size: 28px;color: #345B5E;}
+.section02 p{color: #65676D;font-size: 14px;padding-top:30px;}
+.section02 .xiala{background: url(../public/images/B/xiala.png) no-repeat 50% 50%;width:30px;height:92px;display: inline-block;margin-top:60px;}
+.section02 :after{content: "";clear: both;display: block;}
+.section02 .col05 div{float: left;}
+.section02 .col05 img{width: 100%;vertical-align: bottom;min-height: 444px;}
+.section02 .col .col05.fr{float: right;}
+.section02 .col .col05.fl{clear:inherit}
+.section02 .more{background: url(../public/images/B/sxtys3-bg.jpg) no-repeat 50% 50%/100%;height: 170px;width: 100%;text-align: center;}
+.section02 .more a{padding:10px 20px;background: #345B5E;border: 1px solid #979797;border-radius: 100px;color: #EEEBDA;font-family: STSongti-SC-Regular;margin-top:60px; display: inline-block;}
+.section02 .more a i{background: url(../public/images/B/youjiantou.png) no-repeat 50% 8%/100%;height: 23px;width: 20px;display: inline-block;vertical-align: middle;margin-left: 8px;}
+.section02 .sxtytxt{margin: 10% 50px 0 50px;}
+.section03{background: url(../public/images/B/section03bg.png) no-repeat 50% 50%;width: 100%;height: 300px;padding:60px 0;}
 .section03 .sxsg{width: 600px;margin: auto;}
 .section03 .sxsg img{width: 100%;vertical-align: bottom;height:200px}
 .section03 h3{font-size: 28px;color: #345B5E;font-family: STSongti-SC-Regular;font-weight: 100;padding-bottom: 20px;}
 .section03 .sxsg p{background: #345B5E;color: #E2E2E2;font-size: 13px;width: 100%;padding: 5px 0;}
 @media only screen and (max-width: 960px) {
-	.section01{padding-top:100px;color:#E2E2E2;background: url(../public/images/B/m-section01bg.jpg) no-repeat 50% 50%;width: 100%;height: 300px;position: relative;}
+	.section01{padding-top:40px;color:#E2E2E2;background: url(../public/images/B/sxty-m-banner.jpg) no-repeat 50% 50%;width: 100%;height:250px;position: relative;}
 	.section01 p{font-size: 12px;line-height: 20px;max-width: 640px;margin:0 auto;width: auto;}
 	.section01 .jiage{display: none;}
 	.mobilejiage{display: block;}
 	.mobilejiage .menoy{font-family: TimesNewRomanPS-ItalicMT;font-size: 20px;margin-right: 7px;}
 	.mobilejiage i{font-size: 14px;font-family: TimesNewRomanPS-ItalicMT;}
-	.section01 .btn{position: absolute;bottom: 35px;left:0;right:0;}
+	.m-position{position: absolute;bottom: 10px;left: 0;right: 0;}
+	.section01 .btn{padding:6px 15px;}
+	.section01 .down_icon i{margin-top: 10px;}
 	.mobilejiage{box-shadow: 0 1px 6px 1px rgba(0,0,0,0.10);padding: 10px 0;position: relative;    color: #4a4a4a;}
 	.mobilejiage:before{content: "";border-left:1px solid #B7B6B1;opacity: 0.4;width: 2px;position: absolute;top: 17px;z-index: 1111111;height: 40px;display: inline-block;margin-left: -15px;}
 	.mobilejiage:after{content: "";border-left:1px solid #B7B6B1;opacity: 0.4;width: 2px;position: absolute;top: 17px;z-index: 1111111;height: 40px;display: inline-block;margin-left: 15px;}
-	.section02{display: none;}
-	.m-section02{display: block;}
-	.m-section02 .txt{position: initial;bottom: auto;width: 100%;box-shadow:none}
-	.m-section02 .content{padding:5px 30px 30px 25px;}
-	.m-section02 .content .leftimg{float: none;height:auto;text-align: center;}
-	.m-section02 .content .leftimg img{ padding: 0 30px 0 30px;}
-	.m-section02 .content .border{border-bottom: 1px dashed #B7B6B1; margin:20px 0 ;box-shadow:none}
-	.m-section02 .content .righttxt p{font-size: 12px;line-height: 22px;}
-	.m-section02 .m-txt_header{background: rgba(27,69,73,.5);height:35px;line-height: 35px;color: #FFF;padding-left: 10px;position: absolute;bottom: 0;left: 0;right: 0;}
-	.img{position: relative;}
-	.img img{width: 100%;vertical-align: bottom;}
-	.phone{height: 40px;line-height: 40px;margin:20px 10px 10px 10px;}
-	.phone h3{color: #345B5E;font-size: 20px;}
-	.phone .phone_icon{background: url(../public/images/B/phone.png) no-repeat 50% 50%/100%;width: 40px;height: 40px;display: inline-block; float: right;}
+	.section02 .col05{float: none;width: 100%;}
+	.section02 .col05 div {float: none;}
+	.section02 .xiala{display: none;}
+	.section02 h3{font-size: 18px;font-family: STSongti-SC-Bold;}
+	.section02 p{padding-top: 10px;}
+	.section02 .col05 img{width: 100%;vertical-align: bottom;max-height: 444px;min-height: auto;}
+	.section02 .sxtytxt {margin:20px 10px 5px 10px}
+	.section02 .more{background-size: cover;}
 	.section03{padding-top: 60px;background:none;height: auto;}
 	.section03 .sxsg{width: 100%;}
 	.section03 .sxsg .col05{width: 100%;}
