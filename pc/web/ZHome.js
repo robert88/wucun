@@ -28,40 +28,76 @@ $.ajax({
 
 require("/public/js/lib/daterangepicker.js");
 
+$(".ipt-date").find(".value").val(new Date().format("yy-MM-dd"));
+$(".ipt-date").daterange({type:"singleDate",enableStartDate:new Date(),enableEndDate:new Date(new Date().setMonth(new Date().getMonth()+1))});
 
-var dateRange = new pickerDateRange('date_demo3', {
-	aRecent7Days : 'aRecent7DaysDemo3', //最近7天
-	isTodayValid : false,
-	//startDate : '2013-04-14',
-	//endDate : '2013-04-21',
-	//needCompare : true,
-	//isSingleDay : true,
-	//shortOpr : true,
-	defaultText : ' 至 ',
-	inputTrigger : 'input_trigger_demo3',
-	theme : 'ta',
-	success : function(obj) {
-		$("#dCon_demo3").html('开始时间 : ' + obj.startDate + '<br/>结束时间 : ' + obj.endDate);
-	}
-});
+// debugger
+// var dateRange = new pickerDateRange('date_demo3', {
+// 	aRecent7Days : 'aRecent7DaysDemo3', //最近7天
+// 	isTodayValid : false,
+// 	startDate : new Date().format("yy-MM-dd"),
+// 	//endDate : '2013-04-21',
+// 	//needCompare : true,
+// 	//isSingleDay : true,
+// 	//shortOpr : true,
+// 	magicSelect:true,
+// 	defaultText : ' 至 ',
+// 	inputTrigger : 'input_trigger_demo3',
+// 	theme : 'ta',
+// 	success : function(obj) {
+// 		$("#dCon_demo3").html('开始时间 : ' + obj.startDate + '<br/>结束时间 : ' + obj.endDate);
+// 	}
+// });
 
 
 
 require("/public/js/lib/swiper.min.js");
 
-new Swiper('.swiper-follow', {
-	speed: 1000,
-	// parallax: true,
-	slidesPerView:3,
-	// loop:true,
-	spaceBetween:30,
-	nextButton: '.arrow-right',
-	prevButton: '.arrow-left',
-	paginationClickable: true,
-	pagination: ".swiper-pagination",
-	onTransitionEnd: function () {
+var myswiper;
+
+function initswiper(flag){
+	if(flag==1){
+		myswiper = new Swiper('.swiper-follow', {
+			speed: 1000,
+			// parallax: true,
+			slidesPerView:3,
+			// loop:true,
+			spaceBetween:30,
+			nextButton: '.arrow-right',
+			prevButton: '.arrow-left',
+			paginationClickable: true,
+			pagination: ".swiper-pagination",
+			onTransitionEnd: function () {
+			}
+		});
+	}else{
+		myswiper = new Swiper('.swiper-follow', {
+			speed: 1000,
+			// parallax: true,
+			// slidesPerView:3,
+			// loop:true,
+			// spaceBetween:30,
+			nextButton: '.arrow-right',
+			prevButton: '.arrow-left',
+			paginationClickable: true,
+			pagination: ".swiper-pagination",
+			onTransitionEnd: function () {
+			}
+		});
+	}
+}
+$(window).on("resize",function () {
+ var winw =$(window).width();
+	var flag = winw>960?1:0;
+	if(flag!=preWinW){
+		preWinW = flag;
+		myswiper.destroy(true,true);
+		initswiper(flag)
 	}
 });
+var preWinW= $(window).width()>960?1:0;
+initswiper(preWinW);
+
 
 new Swiper('.swiper-voice', {
 	speed: 1000,

@@ -58,7 +58,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 48px;
   height: 48px;
 }
-.icon-houseHover {
+.icon-house:hover {
   background-image: url(sprite.png);
   background-position: -171px -48px;
   width: 48px;
@@ -70,7 +70,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 48px;
   height: 48px;
 }
-.icon-hutiejieHover {
+.icon-hutiejie:hover {
   background-image: url(sprite.png);
   background-position: 0px -120px;
   width: 48px;
@@ -82,7 +82,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 48px;
   height: 48px;
 }
-.icon-jituiHover {
+.icon-jitui:hover {
   background-image: url(sprite.png);
   background-position: -96px -120px;
   width: 48px;
@@ -112,7 +112,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 51px;
   height: 51px;
 }
-.icon-playHover {
+.icon-play:hover {
   background-image: url(sprite.png);
   background-position: -120px -51px;
   width: 51px;
@@ -136,7 +136,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 60px;
   height: 60px;
 }
-.icon-trunRightHover {
+.icon-trunRight:hover {
   background-image: url(sprite.png);
   background-position: 0px -60px;
   width: 60px;
@@ -148,7 +148,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 60px;
   height: 60px;
 }
-.icon-turnLeftHover {
+.icon-turnLeft:hover {
   background-image: url(sprite.png);
   background-position: -60px 0px;
   width: 60px;
