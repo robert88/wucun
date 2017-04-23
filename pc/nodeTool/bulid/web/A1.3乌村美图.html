@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>乌村</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+
+    <!--start mergeCss:main.min-->
+    <link rel="stylesheet" type="text/css" href="/public/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/common/main.css">
+    <link rel="stylesheet" type="text/css" href="/public/images/Z/outIcon/spriteout.css">
+    <!--end mergeCss-->
+
+    <!--start mergeJs:lib.min-->
+    <script src="/public/js/lib/jquery-1.12.4.js"></script>
+
+    <script src="/public/js/common/prototype.js"></script>
+	<script src="/public/js/vue/vue.min.js"></script>
+    <!--end mergeJs-->
+
+</head>
+
+<body>
+
+    <!--s:导航-->
+    <header>
+    <div class="wrap">
+        <nav>
+            <div class="logo"></div>
+                <div class="menuBtn J-menuBtn"><i class="icon-Menu"></i></div>
+            <div class="navMenu">
+                <ul class="col">
+                    <li class="col02"><a href="">了解乌村</a></li>
+                    <li class="col02"><a href="">奢享时光</a></li>
+                    <li class="col02"><a href="">在线预订</a></li>
+                    <li class="col02"><a href="">特别优惠</a></li>
+                    <li class="col02"><a href="">服务帮助</a></li>
+                </ul>
+            </div>
+            <div class="login-wrap tr">
+                <ul class="tl col">
+                    <li class="tel">您的旅游咨询电话   0573-88731088</li>
+                    <li class="user"><i class="icon-user"></i></li>
+                    <li class="lang"><i class="icon-lang"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <!--e:导航-->
+
+    <!--s:左导航-->
+    <div class="slideNav">
+        <div class="title">
+           <i class="icon-Cancel J-slide-close"></i>
+        </div>
+        <ul class="list">
+            <li>
+                <div class="dt J-more"><i class="icon-Arrow4"></i>了解乌村 </div>
+                <dl>
+                    <dd><i class="icon-Arrow5"></i>缘起乌村</dd>
+                    <dd><i class="icon-Arrow5"></i>官方推荐</dd>
+                    <dd><i class="icon-Arrow5"></i>乌村美图</dd>
+                    <dd><i class="icon-Arrow5"></i>乌村公告</dd>
+                </dl>
+            </li>
+            <li>
+                <div class="dt"><i class="icon-Arrow4"></i>奢享时光</div>
+            </li>
+            <li >
+                <div class="dt"><i class="icon-Arrow4"></i>在线预定</div>
+            </li>
+            <li >
+                <div class="dt"><i class="icon-Arrow4"></i>特别优惠</div>
+            </li>
+            <li >
+                <div class="dt"><i class="icon-Arrow4"></i>服务帮助</div>
+            </li>
+        </ul>
+        <div class="tc lang"><a class="active mr30">英文</a>|<a href="" class="ml30">中文</a></div>
+    </div>
+    <!--e:左导航-->
+
+    <!--s:主题部分-->
+    <style  type='text/css'>@charset "UTF-8"; /*../web/A1.3乌村美图.css*/.waterfull{margin-left:auto;margin-right: auto;} .section03{background: url(../public/images/B/section03bg.png) no-repeat 50% 50%;width: 100%;height: 300px;padding-top: 230px;} .section03 .sxsg{width: 600px;margin: auto;} .section03 .sxsg img{width: 100%;vertical-align: bottom;height:200px} .section03 h3{font-size: 28px;color: #345B5E;font-family: STSongti-SC-Regular;font-weight: 100;padding-bottom: 20px;} .section03 .sxsg p{background: #345B5E;color: #E2E2E2;font-size: 13px;width: 100%;padding: 5px 0;} </style>
+    <!-- 瀑布流样式开始 -->
+<div class="wrap">
+	<div class="waterfull col" id="waterfull">
+		<ul>
+			<li v-for="item in imageGroup" class="item">
+				<a :href="item.src" class="a-img">
+					<img :src="item.img" alt="">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- loading按钮自己通过样式调整 -->
+	<div  id="imloading">...</div>
+	<div  class="tc"><a class="load-more btn btn-private" >欣赏更多 <i class="icon-i0"></i></a></div>
+
+	<div class="section03 tc">
+		<h3>奢享时光</h3>
+		<div class="col sxsg">
+			<div class="col04">
+				<div class="margin10">
+					<img src="../public/images/B/sxsg01.jpg">
+					<p>奢享美食</p>
+				</div>
+
+			</div>
+			<div class="col04">
+				<div class="margin10">
+					<img src="../public/images/B/sxsg02.png">
+					<p>奢享体验</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+    <script>$(function(){;(function(){ var innerModule = {};var innerRequire = function(index){ return innerModule[index]; }; /*../public/js/lib/jQeasing.js*/(function() {
+    jQuery.easing["jswing"] = jQuery.easing["swing"];
+    jQuery.extend(jQuery.easing, {
+        def: "easeOutQuad",
+        swing: function(x, t, b, c, d) {
+            return jQuery.easing[jQuery.easing.def](x, t, b, c, d);
+        },
+        easeInQuad: function(x, t, b, c, d) {
+            return c * (t /= d) * t + b;
+        },
+        easeOutQuad: function(x, t, b, c, d) {
+            return -c * (t /= d) * (t - 2) + b;
+        },
+        easeInOutQuad: function(x, t, b, c, d) {
+            if ((t /= d / 2) < 1) return c / 2 * t * t + b;
+            return -c / 2 * (--t * (t - 2) - 1) + b;
+        },
+        easeInCubic: function(x, t, b, c, d) {
+            return c * (t /= d) * t * t + b;
+        },
+        easeOutCubic: function(x, t, b, c, d) {
+            return c * ((t = t / d - 1) * t * t + 1) + b;
+        },
+        easeInOutCubic: function(x, t, b, c, d) {
+            if ((t /= d / 2) < 1) return c / 2 * t * t * t + b;
+            return c / 2 * ((t -= 2) * t * t + 2) + b;
+        },
+        easeInQuart: function(x, t, b, c, d) {
+            return c * (t /= d) * t * t * t + b;
+        },
+        easeOutQuart: function(x, t, b, c, d) {
+            return -c * ((t = t / d - 1) * t * t * t - 1) + b;
+        },
+        easeInOutQuart: function(x, t, b, c, d) {
+            if ((t /= d / 2) < 1) return c / 2 * t * t * t * t + b;
+            return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
+        },
+        easeInQuint: function(x, t, b, c, d) {
+            return c * (t /= d) * t * t * t * t + b;
+        },
+        easeOutQuint: function(x, t, b, c, d) {
+            return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
+        },
+        easeInOutQuint: function(x, t, b, c, d) {
+            if ((t /= d / 2) < 1) return c / 2 * t * t * t * t * t + b;
+            return c / 2 * ((t -= 2) * t * t * t * t + 2) + b;
+        },
+        easeInSine: function(x, t, b, c, d) {
+            return -c * Math.cos(t / d * (Math.PI / 2)) + c + b;
+        },
+        easeOutSine: function(x, t, b, c, d) {
+            return c * Math.sin(t / d * (Math.PI / 2)) + b;
+        },
+        easeInOutSine: function(x, t, b, c, d) {
+            return -c / 2 * (Math.cos(Math.PI * t / d) - 1) + b;
+        },
+        easeInExpo: function(x, t, b, c, d) {
+            return t == 0 ? b : c * Math.pow(2, 10 * (t / d - 1)) + b;
+        },
+        easeOutExpo: function(x, t, b, c, d) {
+            return t == d ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
+        },
+        easeInOutExpo: function(x, t, b, c, d) {
+            if (t == 0) return b;
+            if (t == d) return b + c;
+            if ((t /= d / 2) < 1) return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
+            return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
+        },
+        easeInCirc: function(x, t, b, c, d) {
+            return -c * (Math.sqrt(1 - (t /= d) * t) - 1) + b;
+        },
+        easeOutCirc: function(x, t, b, c, d) {
+            return c * Math.sqrt(1 - (t = t / d - 1) * t) + b;
+        },
+        easeInOutCirc: function(x, t, b, c, d) {
+            if ((t /= d / 2) < 1) return -c / 2 * (Math.sqrt(1 - t * t) - 1) + b;
+            return c / 2 * (Math.sqrt(1 - (t -= 2) * t) + 1) + b;
+        },
+        easeInElastic: function(x, t, b, c, d) {
+            var s = 1.70158;
+            var p = 0;
+            var a = c;
+            if (t == 0) return b;
+            if ((t /= d) == 1) return b + c;
+            if (!p) p = d * .3;
+            if (a < Math.abs(c)) {
+                a = c;
+                var s = p / 4;
+            } else var s = p / (2 * Math.PI) * Math.asin(c / a);
+            return -(a * Math.pow(2, 10 * (t -= 1)) * Math.sin((t * d - s) * 2 * Math.PI / p)) + b;
+        },
+        easeOutElastic: function(x, t, b, c, d) {
+            var s = 1.70158;
+            var p = 0;
+            var a = c;
+            if (t == 0) return b;
+            if ((t /= d) == 1) return b + c;
+            if (!p) p = d * .3;
+            if (a < Math.abs(c)) {
+                a = c;
+                var s = p / 4;
+            } else var s = p / (2 * Math.PI) * Math.asin(c / a);
+            return a * Math.pow(2, -10 * t) * Math.sin((t * d - s) * 2 * Math.PI / p) + c + b;
+        },
+        easeInOutElastic: function(x, t, b, c, d) {
+            var s = 1.70158;
+            var p = 0;
+            var a = c;
+            if (t == 0) return b;
+            if ((t /= d / 2) == 2) return b + c;
+            if (!p) p = d * .3 * 1.5;
+            if (a < Math.abs(c)) {
+                a = c;
+                var s = p / 4;
+            } else var s = p / (2 * Math.PI) * Math.asin(c / a);
+            if (t < 1) return -.5 * a * Math.pow(2, 10 * (t -= 1)) * Math.sin((t * d - s) * 2 * Math.PI / p) + b;
+            return a * Math.pow(2, -10 * (t -= 1)) * Math.sin((t * d - s) * 2 * Math.PI / p) * .5 + c + b;
+        },
+        easeInBack: function(x, t, b, c, d, s) {
+            if (s == undefined) s = 1.70158;
+            return c * (t /= d) * t * ((s + 1) * t - s) + b;
+        },
+        easeOutBack: function(x, t, b, c, d, s) {
+            if (s == undefined) s = 1.70158;
+            return c * ((t = t / d - 1) * t * ((s + 1) * t + s) + 1) + b;
+        },
+        easeInOutBack: function(x, t, b, c, d, s) {
+            if (s == undefined) s = 1.70158;
+            if ((t /= d / 2) < 1) return c / 2 * t * t * (((s *= 1.525) + 1) * t - s) + b;
+            return c / 2 * ((t -= 2) * t * (((s *= 1.525) + 1) * t + s) + 2) + b;
+        },
+        easeInBounce: function(x, t, b, c, d) {
+            return c - jQuery.easing.easeOutBounce(x, d - t, 0, c, d) + b;
+        },
+        easeOutBounce: function(x, t, b, c, d) {
+            if ((t /= d) < 1 / 2.75) {
+                return c * 7.5625 * t * t + b;
+            } else if (t < 2 / 2.75) {
+                return c * (7.5625 * (t -= 1.5 / 2.75) * t + .75) + b;
+            } else if (t < 2.5 / 2.75) {
+                return c * (7.5625 * (t -= 2.25 / 2.75) * t + .9375) + b;
+            } else {
+                return c * (7.5625 * (t -= 2.625 / 2.75) * t + .984375) + b;
+            }
+        },
+        easeInOutBounce: function(x, t, b, c, d) {
+            if (t < d / 2) return jQuery.easing.easeInBounce(x, t * 2, 0, c, d) * .5 + b;
+            return jQuery.easing.easeOutBounce(x, t * 2 - d, 0, c, d) * .5 + c * .5 + b;
+        }
+    });
+})();;/*../public/js/lib/jquery.masonry.min.js*/(function() {
+    (function(a, b, c) {
+        "use strict";
+        var d = b.event, e = b.event.handle ? "handle" : "dispatch", f;
+        d.special.smartresize = {
+            setup: function() {
+                b(this).bind("resize", d.special.smartresize.handler);
+            },
+            teardown: function() {
+                b(this).unbind("resize", d.special.smartresize.handler);
+            },
+            handler: function(a, b) {
+                var c = this, g = arguments;
+                a.type = "smartresize", f && clearTimeout(f), f = setTimeout(function() {
+                    d[e].apply(c, g);
+                }, b === "execAsap" ? 0 : 100);
+            }
+        }, b.fn.smartresize = function(a) {
+            return a ? this.bind("smartresize", a) : this.trigger("smartresize", [ "execAsap" ]);
+        }, b.Mason = function(a, c) {
+            this.element = b(c), this._create(a), this._init();
+        }, b.Mason.settings = {
+            isResizable: !0,
+            isAnimated: !1,
+            animationOptions: {
+                queue: !1,
+                duration: 500
+            },
+            gutterWidth: 0,
+            isRTL: !1,
+            isFitWidth: !1,
+            containerStyle: {
+                position: "relative"
+            }
+        }, b.Mason.prototype = {
+            _filterFindBricks: function(a) {
+                var b = this.options.itemSelector;
+                return b ? a.filter(b).add(a.find(b)) : a;
+            },
+            _getBricks: function(a) {
+                var b = this._filterFindBricks(a).css({
+                    position: "absolute"
+                }).addClass("masonry-brick");
+                return b;
+            },
+            _create: function(c) {
+                this.options = b.extend(!0, {}, b.Mason.settings, c), this.styleQueue = [];
+                var d = this.element[0].style;
+                this.originalStyle = {
+                    height: d.height || ""
+                };
+                var e = this.options.containerStyle;
+                for (var f in e) this.originalStyle[f] = d[f] || "";
+                this.element.css(e), this.horizontalDirection = this.options.isRTL ? "right" : "left";
+                var g = this.element.css("padding-" + this.horizontalDirection), h = this.element.css("padding-top");
+                this.offset = {
+                    x: g ? parseInt(g, 10) : 0,
+                    y: h ? parseInt(h, 10) : 0
+                }, this.isFluid = this.options.columnWidth && typeof this.options.columnWidth == "function";
+                var i = this;
+                setTimeout(function() {
+                    i.element.addClass("masonry");
+                }, 0), this.options.isResizable && b(a).bind("smartresize.masonry", function() {
+                    i.resize();
+                }), this.reloadItems();
+            },
+            _init: function(a) {
+                this._getColumns(), this._reLayout(a);
+            },
+            option: function(a, c) {
+                b.isPlainObject(a) && (this.options = b.extend(!0, this.options, a));
+            },
+            layout: function(a, b) {
+                for (var c = 0, d = a.length; c < d; c++) this._placeBrick(a[c]);
+                var e = {};
+                e.height = Math.max.apply(Math, this.colYs);
+                if (this.options.isFitWidth) {
+                    var f = 0;
+                    c = this.cols;
+                    while (--c) {
+                        if (this.colYs[c] !== 0) break;
+                        f++;
+                    }
+                    e.width = (this.cols - f) * this.columnWidth - this.options.gutterWidth;
+                }
+                this.styleQueue.push({
+                    $el: this.element,
+                    style: e
+                });
+                var g = this.isLaidOut ? this.options.isAnimated ? "animate" : "css" : "css", h = this.options.animationOptions, i;
+                for (c = 0, d = this.styleQueue.length; c < d; c++) i = this.styleQueue[c], i.$el[g](i.style, h);
+                this.styleQueue = [], b && b.call(a), this.isLaidOut = !0;
+            },
+            _getColumns: function() {
+                var a = this.options.isFitWidth ? this.element.parent() : this.element, b = a.width();
+                this.columnWidth = this.isFluid ? this.options.columnWidth(b) : this.options.columnWidth || this.$bricks.outerWidth(!0) || b, this.columnWidth += this.options.gutterWidth, this.cols = Math.floor((b + this.options.gutterWidth) / this.columnWidth), this.cols = Math.max(this.cols, 1);
+            },
+            _placeBrick: function(a) {
+                var c = b(a), d, e, f, g, h;
+                d = Math.ceil(c.outerWidth(!0) / this.columnWidth), d = Math.min(d, this.cols);
+                if (d === 1) f = this.colYs; else {
+                    e = this.cols + 1 - d, f = [];
+                    for (h = 0; h < e; h++) g = this.colYs.slice(h, h + d), f[h] = Math.max.apply(Math, g);
+                }
+                var i = Math.min.apply(Math, f), j = 0;
+                for (var k = 0, l = f.length; k < l; k++) if (f[k] === i) {
+                    j = k;
+                    break;
+                }
+                var m = {
+                    top: i + this.offset.y
+                };
+                m[this.horizontalDirection] = this.columnWidth * j + this.offset.x, this.styleQueue.push({
+                    $el: c,
+                    style: m
+                });
+                var n = i + c.outerHeight(!0), o = this.cols + 1 - l;
+                for (k = 0; k < o; k++) this.colYs[j + k] = n;
+            },
+            resize: function() {
+                var a = this.cols;
+                this._getColumns(), (this.isFluid || this.cols !== a) && this._reLayout();
+            },
+            _reLayout: function(a) {
+                var b = this.cols;
+                this.colYs = [];
+                while (b--) this.colYs.push(0);
+                this.layout(this.$bricks, a);
+            },
+            reloadItems: function() {
+                this.$bricks = this._getBricks(this.element.children());
+            },
+            reload: function(a) {
+                this.reloadItems(), this._init(a);
+            },
+            appended: function(a, b, c) {
+                if (b) {
+                    this._filterFindBricks(a).css({
+                        top: this.element.height()
+                    });
+                    var d = this;
+                    setTimeout(function() {
+                        d._appended(a, c);
+                    }, 1);
+                } else this._appended(a, c);
+            },
+            _appended: function(a, b) {
+                var c = this._getBricks(a);
+                this.$bricks = this.$bricks.add(c), this.layout(c, b);
+            },
+            remove: function(a) {
+                this.$bricks = this.$bricks.not(a), a.remove();
+            },
+            destroy: function() {
+                this.$bricks.removeClass("masonry-brick").each(function() {
+                    this.style.position = "", this.style.top = "", this.style.left = "";
+                });
+                var c = this.element[0].style;
+                for (var d in this.originalStyle) c[d] = this.originalStyle[d];
+                this.element.unbind(".masonry").removeClass("masonry").removeData("masonry"), b(a).unbind(".masonry");
+            }
+        }, b.fn.imagesLoaded = function(a) {
+            function h() {
+                a.call(c, d);
+            }
+            function i(a) {
+                var c = a.target;
+                c.src !== f && b.inArray(c, g) === -1 && (g.push(c), --e <= 0 && (setTimeout(h), d.unbind(".imagesLoaded", i)));
+            }
+            var c = this, d = c.find("img").add(c.filter("img")), e = d.length, f = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==", g = [];
+            return e || h(), d.bind("load.imagesLoaded error.imagesLoaded", i).each(function() {
+                var a = this.src;
+                this.src = f, this.src = a;
+            }), c;
+        };
+        var g = function(b) {
+            a.console && a.console.error(b);
+        };
+        b.fn.masonry = function(a) {
+            if (typeof a == "string") {
+                var c = Array.prototype.slice.call(arguments, 1);
+                this.each(function() {
+                    var d = b.data(this, "masonry");
+                    if (!d) {
+                        g("cannot call methods on masonry prior to initialization; attempted to call method '" + a + "'");
+                        return;
+                    }
+                    if (!b.isFunction(d[a]) || a.charAt(0) === "_") {
+                        g("no such method '" + a + "' for masonry instance");
+                        return;
+                    }
+                    d[a].apply(d, c);
+                });
+            } else this.each(function() {
+                var c = b.data(this, "masonry");
+                c ? (c.option(a || {}), c._init()) : b.data(this, "masonry", new b.Mason(a, this));
+            });
+            return this;
+        };
+    })(window, jQuery);
+})();;/*../web/A1.3乌村美图.js*/(function() {
+    innerRequire(2);
+    innerRequire(1);
+    var vuer = new Vue({
+        el: "#waterfull",
+        data: {
+            imageGroup: [ {
+                img: "/public/images/A/1.png",
+                src: ""
+            }, {
+                img: "/public/images/A/2.png",
+                src: ""
+            }, {
+                img: "/public/images/A/3.png",
+                src: ""
+            }, {
+                img: "/public/images/A/4.png",
+                src: ""
+            }, {
+                img: "/public/images/A/5.png",
+                src: ""
+            }, {
+                img: "/public/images/A/6.png",
+                src: ""
+            }, {
+                img: "/public/images/A/7.png",
+                src: ""
+            }, {
+                img: "/public/images/A/8.png",
+                src: ""
+            }, {
+                img: "/public/images/A/9.png",
+                src: ""
+            }, {
+                img: "/public/images/A/10.png",
+                src: ""
+            } ]
+        },
+        updated: function() {
+            var $li = $(".item").filter(function(idx, val) {
+                return curindex < idx;
+            });
+            $li.css({
+                opacity: 0
+            });
+            setTimeout(function() {
+                $li.animate({
+                    opacity: 1
+                }, 800);
+                container.masonry("appended", $li, true);
+                curindex = vuer.imageGroup.length;
+            }, 17);
+        }
+    });
+    var curindex = vuer.imageGroup.length;
+    var container = $(".waterfull ul");
+    var loading = $("#imloading");
+    loading.data("on", true);
+    function tores() {
+        var tmpWid = $(".wrap").width();
+        var column = Math.floor(tmpWid / 330);
+        tmpWid = column * 330;
+        $(".waterfull").width(tmpWid);
+    }
+    tores();
+    $(window).resize(function() {
+        tores();
+    });
+    container.imagesLoaded(function() {
+        container.masonry({
+            columnWidth: 330,
+            itemSelector: ".item",
+            isFitWidth: true,
+            isAnimated: true,
+            isRTL: false,
+            isResizable: true,
+            animationOptions: {
+                duration: 800,
+                easing: "easeInOutBack",
+                queue: false
+            }
+        });
+    });
+    $(".load-more").click(function() {
+        if (!loading.data("on")) return;
+        vuer.imageGroup = vuer.imageGroup.concat([ {
+            img: "/public/images/A/2.png",
+            src: ""
+        }, {
+            img: "/public/images/A/3.png",
+            src: ""
+        }, {
+            img: "/public/images/A/4.png",
+            src: ""
+        }, {
+            img: "/public/images/A/5.png",
+            src: ""
+        } ]);
+    });
+})();})();})</script>
+    <!--e:主题部分-->
+
+    <!--s:导航-->
+    <footer>
+        <div class="footer-contain-1920">
+        <div class="wrap">
+            <div class="footer-contain">
+            <div class="logo"></div>
+            <ul class="info col">
+                <li class="col3">
+                    <p><a href="">官方权威预订平台</a></p>
+                    <p><a href="">一价全包畅享超值服务</a></p>
+                    <p><a href="">CCO服务保障高品质度假</a></p>
+                    <p><a href="">7x24小时服务</a></p>
+                </li>
+                <li class="col3">
+                    <p><a href="">联系我们</a></p>
+                    <p><a href="">电话： 0573-88731088</a></p>
+                    <p><a href="">地址：浙江省桐乡市乌镇石佛南路18号</a></p>
+                </li>
+                <li class="col3">
+                    <p><a href="">乌镇官网</a></p>
+                    <p><a href="">乌镇预订网</a></p>
+                    <p><a href="">乌镇戏剧节</a></p>
+                    <p><a href="">古北水镇官网</a></p>
+                </li>
+                <li class="col3">
+                    <p><a href="">服务指南</a></p>
+                    <p><a href="">交通路线</a></p>
+                    <p><a href="">常见问题</a></p>
+                </li>
+            </ul>
+            <div class="weiCode"><img src="/public/images/Z/erweima.jpg" width="135" height="135" alt=""></div>
+            </div>
+
+
+        </div>
+
+        <div class="right-wrap">
+            <hr>
+            <div class="right wrap">
+                <a href="">版权声明 </a>|<a href="">隐私政策</a>|<a href="">乌镇旅游股份有限公司©版本所有©浙ICP备09047744号</a>
+            </div>
+        </div>
+        </div>
+
+       <div class="footer-contain-640">
+           <ul class="mobile-info">
+               <li class="title"><a href="">联系我们</a></li>
+               <li><i class="icon-tel mr10"></i>旅行顾问电话：0573-88731088</li>
+               <li><i class="icon-location mr10"></i>浙江省桐乡市乌镇石佛南路18</li>
+               <li><i class="icon-kefu mr10"></i>在线客服咨询</li>
+               <li><i class="icon-shaomiao mr10"></i>关注乌村微信公众号</li>
+           </ul>
+           <p class="rightpower">
+               <a href="">版权声明 </a>|<a href="">隐私政策</a><br/>
+               <a href="">乌镇旅游股份有限公司©版本所有©浙ICP备09047744号</a>
+           </p>
+       </div>
+    </footer>
+    <!--e:导航-->
+
+</body>
+
+<script src="/public/js/common/main.js"></script>
+
+
+</html>

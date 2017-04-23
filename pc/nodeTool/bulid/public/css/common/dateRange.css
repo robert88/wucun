@@ -1,0 +1,117 @@
+.daterange-popup{
+	position:absolute;
+	top:100%;
+	left:0;
+	z-index:1000;
+	width:730px;
+	height:430px;
+	color: #9B9B9B;
+	font-size: 20px;
+	background: #fff;
+	box-shadow: 1px 2px 3px #c1c1c1;
+}
+.daterange-popup-wrap{
+	position:relative;
+	padding:10px 30px 50px 30px;
+}
+.daterange-popup .year{
+	height:56px;
+	line-height: 56px;
+	position: relative;
+	border-bottom:1px solid #E2E2E2;
+	font-size: 20px;
+	text-align: center;
+}
+.daterange-popup .year .icon-close{
+	margin-top: -7px;
+	cursor: pointer;
+	position:absolute;
+	right:0;
+	top:50%;
+}
+.daterange-popup .year .year-prev,.daterange-popup .year .year-next{
+
+	cursor: pointer;
+}
+.daterange-popup .year span{
+
+	margin:0 10px;
+}
+.daterange-popup .year-value{
+	font-weight: 700;
+}
+.daterange-popup .month{
+	text-align: center;
+	line-height: 56px;
+	margin:5px 0;
+	font-size: 20px;
+}
+.daterange-popup .month-prev{
+
+	cursor: pointer;
+	float: left;
+}
+.daterange-popup .month-next{
+
+	cursor: pointer;
+	float: right;
+}
+.daterange-popup .month-value{
+	font-size: 20px;
+	color: #345B5E;
+}
+.daterange-popup .date-item{
+	float: left;
+	width: 40%;
+}
+.daterange-popup .date-item:last-child{
+	padding-left:10%;
+}
+.daterange-popup .date-item:first-child{
+	padding-right:10%;
+}
+.daterange-popup table{
+	border-collapse: collapse;
+	border:none;
+	text-align: center;
+	width: 100%;
+}
+.daterange-popup table tr td{
+	padding: 5px 0;
+	letter-spacing: 0;
+	line-height: 33px;
+	cursor: pointer;
+}
+.daterange-popup .week table{
+	border-bottom:  1px solid #E2E2E2;
+}
+.daterange-popup .week thead tr th{
+	line-height: 35px;
+	font-size: 16px;
+	color: #9B9B9B;
+	width:14.285%;
+}
+.daterange-popup .day table{
+	border:none;
+	font-size: 14px;
+}
+.daterange-popup .day tbody tr td .value-wrap{
+	color: #4A4A4A;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+.daterange-popup .day tbody tr td.disabled .value-wrap{
+	color: #9B9B9B;
+}
+.daterange-popup .day tbody tr td.selected .value-wrap{
+	color: #F0F0F0;
+	font-size: 14px;
+	background: #345B5E;
+}
+.daterange-popup .day tbody tr td.start-day .value-wrap{
+	border-radius: 14px 0 0 14px;
+}
+.daterange-popup .day tbody tr td.end-day .value-wrap{
+	border-radius: 0 14px 14px 0;
+}
