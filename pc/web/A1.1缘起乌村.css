@@ -47,5 +47,6 @@
 	.section02 .col05 img{width: 100%;vertical-align: bottom;max-height: 444px;min-height: auto;}
 	.section02 .sxtytxt {margin:20px 10px 5px 10px}
 	.section02 .more{background-size: cover;}
-	.section03 .col{width: 100%; overflow: scroll;}
+	.section03 .col ul{width: 100%;}
+	.section03 .col ul li{float: none;width: 100%;}
 }

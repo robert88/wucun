@@ -14,7 +14,7 @@
 .content .box .tcnr ul li{float: left;width: 50%;}
 .content .box .tcnr span{display: block;color: #1B4549;font-size: 12px;}
 
-.box .btn{background: #637332;padding:2px 60px;}
+.box .btn{background: #637332;padding:2px 60px;    margin-left: 10px;}
 .box .btn a{font-size: 14px;color:#FFF}
 .box .fr{ padding-top: 4px;}
 .box .fr ul li{float: left;margin: 0 10px;}
@@ -41,12 +41,13 @@
 	.main .banner h1{font-weight: 100;font-family: STSongti-SC-Regular;font-size: 30px;}
 	.main .banner p{font-size: 12px;line-height: 20px;max-width: 640px;margin:0 auto;width: auto;}
 	.section02{background: none}
-	.content{width: 100%;}
-	.content .box{padding: 0 10px 60px 10px;}
+	.content{width: 100%;top: 0px; margin-top: -160px; }
+	.content .box{padding: 0 0 60px 0;}
 	.content .box .fr{ padding-top: 10px;float: none;}
 	.content .box .margin15{margin: 20px 10px;}
 	.content .box .tcnr span{line-height: 14px;margin-top: 5px;}
 	.content .box .tcnr ul li{float: left;width: 50%;}
+	.content .box .tcnr ul li .margin10{margin: 0;}
 	.prev_txt,.next_txt{display: none;}
 	.page ul li .iconlist{width: 27px;height: 27px;}
 }

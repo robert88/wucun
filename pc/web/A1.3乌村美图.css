@@ -15,5 +15,6 @@
     margin-left: 8px;
 }
 @media only screen and (max-width: 960px) {
-	.section03 .col{width: 100%; overflow: scroll;}
+	.section03 .col ul{width: 100%;}
+	.section03 .col ul li{float: none;width: 100%;}
 }

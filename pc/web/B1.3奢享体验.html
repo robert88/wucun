@@ -1,3 +1,5 @@
+<script type="text/javascript" src="../public/js/lib/swiper.min.js"></script>
+
 <div class="section01 tc">
 		<h1>奢享体验</h1>
 		<p>在美丽乡村大自然中，坐落在京杭大运河边的一个古村落，住宿区域共有7个不同风格、不同主题的组团，共有客房186间，同时可容纳400余人住宿，在这里有无数宁静休憩的小天地，在这里注重您的隐私，在这里提供周到的服务。</p>
@@ -24,7 +26,21 @@
 			</div>
 			<div class="col05">
 				<div class="rightside">
-					<img src="../public/images/B/sxty-img01.jpg"/>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="../public/images/B/sxty-img01.jpg"/>
+									<p>新鲜的番茄</p>
+								</div>
+								<div class="swiper-slide"><img src="../public/images/B/sxty-img02.jpg"/></div>
+								<div class="swiper-slide">
+									<img src="../public/images/B/sxty-img03.jpg"/>
+									<p>新鲜的番茄</p>
+								</div>							
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>	
+					</div>
 				</div>
 			</div>
 		</div>
@@ -80,3 +96,15 @@
 		</div>
 	</div>
 </div>
+
+	<script language="javascript"> 
+	var mySwiper = new Swiper('.swiper-container',{
+		autoplay : 2500,
+		loop:true,  //循环滑动
+		pagination : '.swiper-pagination',
+		paginationClickable :true,
+		prevButton:'.swiper-button-prev',
+		nextButton:'.swiper-button-next',
+		paginationType: 'fraction'
+	})
+	</script>

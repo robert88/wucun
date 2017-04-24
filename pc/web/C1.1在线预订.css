@@ -5,7 +5,7 @@
 .section01 .m-position{position: absolute;bottom: 10px;left: 0;right: 0;}
 .section01 .btn{font-size: 14px;}
 .section01 .menoy{font-family: TimesNewRomanPS-ItalicMT;font-size: 20px;margin: 0 3px;}
-.mobilejiage{display: none;}
+.mobilejiage{display: none;background: #FFF;}
 .section01 .down_icon i{background: url(../public/images/B/down-outline.png) no-repeat 50% 50%;width:30px;height:30px;display: inline-block;margin-top: 20px;}
 
 .section02{padding: 20px 0 50px 0;}
@@ -33,7 +33,7 @@
 	.mobilejiage{box-shadow: 0 1px 6px 1px rgba(0,0,0,0.10);padding: 10px 0;position: relative;    color: #4a4a4a;}
 	.mobilejiage:before{content: "";border-left:1px solid #B7B6B1;opacity: 0.4;width: 2px;position: absolute;top: 17px;z-index: 1111111;height: 40px;display: inline-block;margin-left: -15px;}
 	.mobilejiage:after{content: "";border-left:1px solid #B7B6B1;opacity: 0.4;width: 2px;position: absolute;top: 17px;z-index: 1111111;height: 40px;display: inline-block;margin-left: 15px;}
-	
+	.section02{background: #FFF;}
 	
 	.section02 ul{width: auto;margin: 0 auto;}
 	.section02 ul li{float: none;width: 100%;}

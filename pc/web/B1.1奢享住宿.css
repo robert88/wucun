@@ -2,7 +2,7 @@
 .section01 h1{font-weight: 100;font-family: STSongti-SC-Regular;}
 .section01 .btn{font-size: 14px;}
 .section01 .menoy{font-family: TimesNewRomanPS-ItalicMT;font-size: 20px;margin: 0 3px;}
-.mobilejiage{display: none;}
+.mobilejiage{display: none;background: #FFF;}
 .section01 p{padding:10px 15px 20px 15px;width: 850px; margin: auto;}
 .m-section02{display: none;}
 .section02{position: relative;}
@@ -41,7 +41,7 @@
 	.mobilejiage:before{content: "";border-left:1px solid #B7B6B1;opacity: 0.4;width: 2px;position: absolute;top: 17px;z-index: 1111111;height: 40px;display: inline-block;margin-left: -15px;}
 	.mobilejiage:after{content: "";border-left:1px solid #B7B6B1;opacity: 0.4;width: 2px;position: absolute;top: 17px;z-index: 1111111;height: 40px;display: inline-block;margin-left: 15px;}
 	.section02{display: none;}
-	.m-section02{display: block;}
+	.m-section02{display: block;background: #FFF;}
 	.m-section02 .txt{position: initial;bottom: auto;width: 100%;box-shadow:none}
 	.m-section02 .content{padding:5px 30px 30px 25px;}
 	.m-section02 .content .leftimg{float: none;height:auto;text-align: center;}
@@ -54,7 +54,7 @@
 	.phone{height: 40px;line-height: 40px;margin:20px 10px 10px 10px;}
 	.phone h3{color: #345B5E;font-size: 20px;}
 	.phone .phone_icon{background: url(../public/images/B/phone.png) no-repeat 50% 50%/100%;width: 40px;height: 40px;display: inline-block; float: right;}
-	.section03{padding-top: 60px;background:none;height: auto;}
+	.section03{padding-top: 60px;background:none;height: auto;background: #FFF;}
 	.section03 .sxsg{width: 100%;}
 	.section03 .sxsg .col05{width: 100%;}
 }

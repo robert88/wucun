@@ -106,12 +106,12 @@ footer .footer-contain .logo {
 
 	.wrap{max-width: 640px;}
 	nav{padding: 0}
-	nav .menuBtn{display: inline-block;top: 30px;}
-	nav .login-wrap{top:30px;}
+	nav .menuBtn{display: inline-block;top: 6px;}
+	nav .login-wrap{top:2px;}
 	nav .navMenu,nav .login-wrap .tel,nav .login-wrap .lang{display: none;}
 	nav .login-wrap .user{float: right;}
-	nav .logo{left:50%;top:50%;margin-left:-48px;margin-top: 100px;}
-	header{background: url("/public/images/Z/640/bg1_640.jpg") no-repeat center center;height: 317px;}
+	nav .logo{left:50%;top:50%;margin-left:-15px;margin-top: 0;width: 30px;height: 40px;top:0px;background: url("/public/images/Z/logo-white.png") no-repeat 50% 50%/100%;}
+	header{background:#1B4549;height: 40px;}
 	footer{height:auto;}
 	footer .footer-contain-1920{display: none;}
 	footer .footer-contain-640{padding:0 30px;}
