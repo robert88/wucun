@@ -105,12 +105,14 @@ footer .footer-contain .logo {
 @media screen and (max-width:960px)  {
 
 	.wrap{max-width: 640px;}
+	nav{padding: 0}
 	nav .menuBtn{display: inline-block;top: 30px;}
 	nav .login-wrap{top:30px;}
 	nav .navMenu,nav .login-wrap .tel,nav .login-wrap .lang{display: none;}
 	nav .login-wrap .user{float: right;}
 	nav .logo{left:50%;top:50%;margin-left:-48px;margin-top: 100px;}
 	header{background: url("/public/images/Z/640/bg1_640.jpg") no-repeat center center;height: 317px;}
+	footer{height:auto;}
 	footer .footer-contain-1920{display: none;}
 	footer .footer-contain-640{padding:0 30px;}
 	footer .footer-contain-640 .mobile-info li{border-bottom: 1px solid #1b4244;}

@@ -1,0 +1,38 @@
+.section01{padding-top:60px;color: #E2E2E2;;background: url(../public/images/A/gftj-banner01.jpg) no-repeat 50% 50%/100%;width: 100%;height: 330px;}
+.section01 h1{font-weight: 100;font-family: STSongti-SC-Regular;}
+.section01 .btn{font-size: 14px;}
+.section01 .menoy{font-family: TimesNewRomanPS-ItalicMT;font-size: 20px;margin: 0 3px;}
+.section01 .down_icon i{background: url(../public/images/B/down-outline.png) no-repeat 50% 50%;width:30px;height:30px;display: inline-block;margin-top: 20px;}
+.mobilejiage{display: none;}
+.section01 p{padding:10px 15px 20px 15px;width: 850px; margin: auto;}
+.section02{padding:50px 0;}
+.section02 .list ul{width:800px;margin: auto;}
+.section02 .list ul li{float: left;width: 50%;}
+.section02 .list ul li .margin10{border:1px solid #E2E2E2;position: relative;}
+.section02 .list ul li img{width:100%;vertical-align: middle;min-height: 213px;}
+.section02 .list ul li p{font-size: 12px;color: #fff;padding:2px 10px;background: #345B5E;position: absolute;bottom:0;}
+.section03{background: url(../public/images/Z/texturebg.png)no-repeat 0% 0%/100%;border-top: 1px solid #809899;padding: 50px 0;}
+.section03 h3{font-size: 18px;font-weight: 100;color:#345B5E;text-align: center;margin-bottom: 10px;}
+.section03 ul li{width: 33.33%;float: left;}
+.section03 ul li .margin10{position: relative;}
+.section03 ul li img{width: 100%;}
+.section03 ul{width: 900px;margin: auto;}
+.section03 ul li p{position:absolute;bottom:7px;background: #345B5E;color: #FFF;font-size: 12px;left: 0;right: 0;text-align: center;padding: 3px 0;}
+@media only screen and (max-width: 960px) {
+	.section01{padding-top:100px;color:#E2E2E2;background: url(../public/images/A/gftj-m-banner01.jpg) no-repeat 50% 50%;width: 100%;height: 300px;position: relative;}
+	.section01 p{font-size: 12px;line-height: 20px;max-width: 640px;margin:0 auto;width: auto;}
+	.section01 .jiage{display: none;}
+	.mobilejiage{display: block;}
+	.mobilejiage .menoy{font-family: TimesNewRomanPS-ItalicMT;font-size: 20px;margin-right: 7px;}
+	.mobilejiage i{font-size: 14px;font-family: TimesNewRomanPS-ItalicMT;}
+	.mobilejiage{box-shadow: 0 1px 6px 1px rgba(0,0,0,0.10);padding: 10px 0;position: relative;    color: #4a4a4a;}
+	.mobilejiage:before{content: "";border-left:1px solid #B7B6B1;opacity: 0.4;width: 2px;position: absolute;top: 17px;z-index: 1111111;height: 40px;display: inline-block;margin-left: -15px;}
+	.mobilejiage:after{content: "";border-left:1px solid #B7B6B1;opacity: 0.4;width: 2px;position: absolute;top: 17px;z-index: 1111111;height: 40px;display: inline-block;margin-left: 15px;}
+	.m-position{position: absolute;bottom: 10px;left: 0;right: 0;}
+	.section01 .btn{padding:6px 15px;}
+	.section01 .down_icon i{margin-top: 10px;}
+	.section02 {background: none;}
+	.section02 .list ul {width: 100%; margin: auto;}
+	.section02 .list ul li{width: 100%;}
+	.section03 .col{width: 100%; overflow: scroll;}
+}
