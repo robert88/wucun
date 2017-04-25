@@ -246,3 +246,17 @@ img {
 }
 .clearfix:after{content: "";clear: both;display: block;}
 .hidden{display: none;}
+.swiper-container{margin:0 auto;position:relative;overflow:hidden;z-index:1}
+.swiper-wrapper{position:relative;width:100%;height:auto;z-index:1;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;-o-transition-property:-o-transform;-ms-transition-property:-ms-transform;transition-property:transform;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
+.swiper-slide{-webkit-flex-shrink:0;-ms-flex:0 0 auto;flex-shrink:0;width:100%;height:auto;position:relative}
+.swiper-button-next,.swiper-button-prev{position:absolute;top:50%;width:27px;height:27px;margin-top:-13px;z-index:10;cursor:pointer;background-position:center;background-repeat:no-repeat}
+.swiper-button-prev,.swiper-container-rtl .swiper-button-next{/*background:url(../images/iconfont-left.png) no-repeat;*/left:4px;right:auto;background-size: 26px;}
+.swiper-button-next,.swiper-container-rtl .swiper-button-prev{/*background:url(../images/iconfont-right.png) no-repeat;*/right:4px;left:auto;background-size: 26px;}
+.swiper-pagination{position:absolute;-webkit-transition:.3s;-moz-transition:.3s;-o-transition:.3s;transition:.3s;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);z-index:10}
+.swiper-pagination-bullet{width:8px;height:8px;display:inline-block;border-radius:100%;background:#000;opacity:.2}
+button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-moz-appearance:none;-ms-appearance:none;-webkit-appearance:none;appearance:none}
+.swiper-pagination-bullet-active{opacity:1;background:#FFF}
+.swiper-container-horizontal>.swiper-pagination{bottom:5px;left:15px;width:100%;color: #FFF;}
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 5px}
+.swiper-slide a{color:#FFF;}
+.swiper-container .swiper-slide p{position: absolute;bottom: 0; background: rgba(27,69,73,.5);padding:5px 10px;color:#FFF;width: 100%;padding-left: 60px;}
