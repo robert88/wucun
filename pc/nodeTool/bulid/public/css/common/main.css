@@ -2,10 +2,19 @@
 [class^="icon-"], [class*=" icon-"] {
 	display: inline-block;width: 33px;height:33px;vertical-align: middle;
 }
-
+.header{background: #1B4549 ;height: 60px;line-height: 60px;padding: 0 20px;position: relative;}
+.header .navMenu{margin-left: 60px;}
+.header .navMenu ul li{float: left;margin: 0 20px;position: relative;}
+.header .navMenu ul li i{content: "";border-right:1px solid rgba(255,255,255,.4);height:14px;position: absolute;top: 23px;right: -18px;}
+.header .navMenu ul li.active a{color: #FFF;}
+.header .navMenu ul li:hover a{color: #FFF;}
+.header .navMenu ul li a{color: #809899;}
+.header .login-wrap{float: right;}
+.header .login-wrap ul li{float: left;margin: 0 10px;color:#809899;}
+.header .logo {background: url(../../images/Z/logo-white.png) no-repeat 50% 50%/100%;width: 38px;height: 52px;float: left;position: absolute;left: 20px;top: 5px;}
 
 nav{padding: 0 388px 0 164px;position:relative;color: #fff;font-size: 16px;}
-nav .logo{background: url("/public/images/Z/logo-white.png") no-repeat;position:absolute;left:10px;top:30px;width: 96px;height: 117px;}
+nav .logo{background: url("../../images/Z/logo-white.png") no-repeat;position:absolute;left:10px;top:30px;width: 96px;height: 117px;}
 nav .navMenu{max-width: 644px;padding-top:60px;}
 nav .navMenu li,nav .login-wrap li{height: 33px;line-height: 33px;}
 nav .login-wrap{position:absolute;right:0;top:60px;width: 388px;height: 117px;}
@@ -14,6 +23,9 @@ nav .login-wrap .tel{margin-right:40px;}
 nav .login-wrap .user{margin-right:10px;}
 nav .menuBtn{
 	display: none;position:absolute;left:10px;top: 60px;
+}
+.header .menuBtn{
+	display: none;
 }
 
 .slideNav{
@@ -81,7 +93,7 @@ nav .menuBtn{
 .slideNav .lang .active{
 	color:#cecece;
 }
-
+.footer-contain-1920{padding: 0 20px;}
 footer{height: 250px;background: #063033;font-size: 14px; color: #809899; line-height: 32px;}
 footer .footer-contain {padding:30px 147px 30px 120px;position:relative;}
 footer .footer-contain .logo{position:absolute; display: inline-block;width: 90px;height: 109px;left:0;top:30px;}
@@ -89,15 +101,28 @@ footer .footer-contain .weiCode{position:absolute;right:0;top:30px;}
 footer hr{  width: 100%;height: 1px;border: none;background: #2B3F40;}
 footer .right{text-align: center; line-height: 60px;}
 footer .right a{margin:0 10px;}
-footer .footer-contain .logo {
-	background: url(/public/images/Z/logo-color.png) no-repeat;
-}
+footer .footer-contain .logo {background: url(../../images/Z/logo-color.png) no-repeat;}
+
+.swiper-container{margin:0 auto;position:relative;overflow:hidden;z-index:1}
+.swiper-wrapper{position:relative;width:100%;height:auto;z-index:1;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;-o-transition-property:-o-transform;-ms-transition-property:-ms-transform;transition-property:transform;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
+.swiper-slide{-webkit-flex-shrink:0;-ms-flex:0 0 auto;flex-shrink:0;width:100%;height:auto;position:relative}
+.swiper-button-next,.swiper-button-prev{position:absolute;top:50%;width:27px;height:27px;margin-top:-13px;z-index:10;cursor:pointer;background-position:center;background-repeat:no-repeat}
+.swiper-button-prev,.swiper-container-rtl .swiper-button-next{/*background:url(../images/iconfont-left.png) no-repeat;*/left:4px;right:auto;background-size: 26px;}
+.swiper-button-next,.swiper-container-rtl .swiper-button-prev{/*background:url(../images/iconfont-right.png) no-repeat;*/right:4px;left:auto;background-size: 26px;}
+.swiper-pagination{position:absolute;-webkit-transition:.3s;-moz-transition:.3s;-o-transition:.3s;transition:.3s;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);z-index:10}
+.swiper-pagination-bullet{width:8px;height:8px;display:inline-block;border-radius:100%;background:#000;opacity:.2}
+button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-moz-appearance:none;-ms-appearance:none;-webkit-appearance:none;appearance:none}
+.swiper-pagination-bullet-active{opacity:1;background:#FFF}
+.swiper-container-horizontal>.swiper-pagination{bottom:5px;left:15px;width:100%;color: #FFF;}
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 5px}
+.swiper-slide a{color:#FFF;}
+.swiper-container .swiper-slide p{position: absolute;bottom: 0; background: rgba(27,69,73,.5);padding:5px 10px;color:#FFF;width: 100%;padding-left: 60px;}
 
 @media screen and (min-width:960px) and (max-width:1250px){
 	nav{padding: 0 388px 0 124px;}
 }
 @media screen and (min-width:960px){
-	header{background: url("/public/images/Z/bg1.jpg") no-repeat center center;height: 950px;}
+	header{background: url("../../images/Z/bg1.jpg") no-repeat center center;height: 950px;}
 	footer .footer-contain-640 {display: none}
 
 }
@@ -105,12 +130,21 @@ footer .footer-contain .logo {
 @media screen and (max-width:960px)  {
 
 	.wrap{max-width: 640px;}
-	nav .menuBtn{display: inline-block;top: 30px;}
-	nav .login-wrap{top:30px;}
+	nav{padding: 0}
+	nav .menuBtn{display: inline-block;top: 6px;}
+	nav .login-wrap{top:2px;}
 	nav .navMenu,nav .login-wrap .tel,nav .login-wrap .lang{display: none;}
 	nav .login-wrap .user{float: right;}
-	nav .logo{left:50%;top:50%;margin-left:-48px;margin-top: 100px;}
-	header{background: url("/public/images/Z/640/bg1_640.jpg") no-repeat center center;height: 317px;}
+	nav .logo{left:50%;top:50%;margin-left:-15px;margin-top: 0;width: 30px;height: 40px;top:0px;background: url("../../images/Z/logo-white.png") no-repeat 50% 50%/100%;}
+	nav{padding: 0}
+	.header .menuBtn{display: inline-block;top: 6px;}
+	.header .login-wrap{top:2px;}
+	.header .navMenu,.header .login-wrap .tel,.header .login-wrap .lang{display: none;}
+	.header .login-wrap .user{float: right;}
+	.header .logo{position:absolute;left:50%;margin-left:-15px;background: url("../../images/Z/logo-white.png") no-repeat 50% 50%/100%;}
+	.header .login-wrap ul li{margin: 0;}
+	header{background:#1B4549;height: 40px;}
+	footer{height:auto;}
 	footer .footer-contain-1920{display: none;}
 	footer .footer-contain-640{padding:0 30px;}
 	footer .footer-contain-640 .mobile-info li{border-bottom: 1px solid #1b4244;}

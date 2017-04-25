@@ -213,16 +213,16 @@
 }
 @media screen and (min-width:960px){
 	.home-head .nongqu{
-		background:url("/public/images/Z/Rectangle4.jpg") no-repeat center center;
+		background:url("../public/images/Z/Rectangle4.jpg") no-repeat center center;
 	}
 	.home-head .tongqu{
-		background:url("/public/images/Z/Rectangle5.png") no-repeat center center;
+		background:url("../public/images/Z/Rectangle5.png") no-repeat center center;
 	}
 	.home-head .shiqu{
-		background:url("/public/images/Z/Rectangle6.png") no-repeat center center;
+		background:url("../public/images/Z/Rectangle6.png") no-repeat center center;
 	}
 	.voice-block{
-		background: url(/public/images/Z/texturebg.png) no-repeat center center;
+		background: url(../public/images/Z/texturebg.png) no-repeat center center;
 		height:700px;
 	}
 	.titlte-block-contain{
@@ -249,16 +249,16 @@
 		bottom:6px;
 	}
 	.home-head .nongqu{
-		background:url("/public/images/Z/640/Rectangle4_640.jpg") no-repeat center center;
+		background:url("../public/images/Z/640/Rectangle4_640.jpg") no-repeat center center;
 	}
 	.home-head .tongqu{
-		background:url("/public/images/Z/640/Rectangle5_640.png") no-repeat center center;
+		background:url("../public/images/Z/640/Rectangle5_640.png") no-repeat center center;
 	}
 	.home-head .shiqu{
-		background:url("/public/images/Z/640/Rectangle6_640.png") no-repeat center center;
+		background:url("../public/images/Z/640/Rectangle6_640.png") no-repeat center center;
 	}
 	.voice-block{
-		background: url(/public/images/Z/640/texturebg_640.png) no-repeat center center;
+		background: url(../public/images/Z/640/texturebg_640.png) no-repeat center center;
 		height: 814px;
 	}
 	.ditu-block .col4{
